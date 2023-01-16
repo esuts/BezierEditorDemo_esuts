@@ -1,6 +1,6 @@
 import com.neuronrobotics.bowlerstudio.scripting.ScriptingEngine
 import com.neuronrobotics.bowlerkernel.Bezier3d.*;
-
+import eu.mihosoft.vrl.v3d.*;
 def URL="https://gist.github.com/4aeeaa49bd3a807eed8f8ff3dea84c48.git"
 def file="bez.json"
 //Temp file
@@ -12,6 +12,8 @@ def file="bez.json"
 BezierEditor editor = new BezierEditor(ScriptingEngine.fileFromGit(URL, file),20)
 //Git file loaded and saved
 //BezierEditor editor = new BezierEditor(URL, file,10)
+
+ArrayList<Transform>  transforms = editor.transforms()
 
 
 
