@@ -16,6 +16,4 @@ BezierEditor editor = new BezierEditor(ScriptingEngine.fileFromGit(URL, file),20
 ArrayList<Transform>  transforms = editor.transforms()
 
 
-
-
 return editor.get()
