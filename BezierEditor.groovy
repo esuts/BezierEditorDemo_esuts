@@ -1,4 +1,4 @@
-def URL="https://github.com/madhephaestus/manipulator-test.git"
+def URL="https://gist.github.com/4aeeaa49bd3a807eed8f8ff3dea84c48.git"
 def file="bez.json"
 //Temp file
 //BezierEditor editor = new BezierEditor(
