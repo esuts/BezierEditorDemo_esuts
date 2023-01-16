@@ -1,5 +1,5 @@
 import com.neuronrobotics.bowlerstudio.scripting.ScriptingEngine
-import com.neuronrobotics.bowlerkernel.Bezier3d;
+import com.neuronrobotics.bowlerkernel.Bezier3d.*;
 
 def URL="https://gist.github.com/4aeeaa49bd3a807eed8f8ff3dea84c48.git"
 def file="bez.json"
@@ -9,7 +9,7 @@ def file="bez.json"
 //		,20)
 
 //Git stored file loaded but not saved
-BezierEditorDemo editor = new BezierEditorDemo(ScriptingEngine.fileFromGit(URL, file),20)
+BezierEditor editor = new BezierEditor(ScriptingEngine.fileFromGit(URL, file),20)
 //Git file loaded and saved
 //BezierEditor editor = new BezierEditor(URL, file,10)
 
