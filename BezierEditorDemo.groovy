@@ -15,6 +15,6 @@ BezierEditor editor = new BezierEditor(ScriptingEngine.fileFromGit(URL, file),20
 
 ArrayList<Transform>  transforms = editor.transforms()
 
-ArrayList<CSG> modelParts = Extrude.hull(new Cube(20).toCSG(), transforms)
+def modelParts = CSG.unionAll(Extrude.hull(new Cube(20).toCSG(), transforms))
 
 return [editor.get(),modelParts]
